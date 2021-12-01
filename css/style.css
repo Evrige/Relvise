@@ -43,6 +43,10 @@ li {
      object-fit: cover;
 }
 
+._second {
+  display: none;
+}
+
 ._title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,6 +145,7 @@ li {
   font-weight: 500;
   font-size: 20px;
   color: #737373;
+  margin: 40px 0;
 }
 
 .main__buttons {
@@ -186,8 +191,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .consalting__item {
@@ -562,8 +565,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -592,8 +593,6 @@ li {
   color: #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .getintouch__item.item p,
@@ -632,4 +631,298 @@ li {
   padding: 10px 20px;
   border: 1px solid #ff7b47;
   color: #ff7b47;
+}
+
+.contact {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.contact__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  margin-bottom: 10px;
+}
+
+.contact__sub-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.contact__button {
+  padding: 15px 40px;
+  color: #fff;
+  background-color: #ff7b47;
+  border-radius: 5px;
+}
+
+.menu {
+  background-color: #17213c;
+}
+
+.menu__conteiner {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 320px;
+}
+
+.menu__item:not(:last-child) {
+  padding-right: 30px;
+}
+
+.menu__title {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu__text {
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.menu__sub-title:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.menu__sub-title a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.menu .getintouch-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu .getintouch-footer img {
+  margin-right: 10px;
+}
+
+.down__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0;
+}
+
+.down__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.down__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+@media (max-width: 1100px) {
+  ._conteiner {
+    max-width: 768px;
+  }
+  .consalting__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .consalting__item:not(:last-child) {
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+  .design__section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .design__item {
+    margin: 0 15px 15px 0;
+  }
+  .advice__section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advice__item {
+    margin: 0 15px 15px 0;
+  }
+  .we__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .we__sub-title {
+    max-width: 500px;
+  }
+  .we .info {
+    margin: 20px 0 0 0;
+  }
+  .partner__sponsor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partner__link {
+    margin-top: 20px;
+  }
+  .partner__title {
+    font-size: 17px;
+  }
+  .getintouch__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .getintouch__item {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  ._conteiner {
+    max-width: 550px;
+  }
+  ._first {
+    display: none;
+  }
+  ._second {
+    display: block;
+    opacity: 0.7;
+  }
+  .main__title {
+    font-size: 40px;
+  }
+  ._title h1 {
+    font-size: 28px;
+  }
+  .we__video iframe {
+    width: 450px;
+  }
+  .we__title {
+    font-size: 28px;
+  }
+  .partner__mail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partner__title {
+    width: 300px;
+    margin: 20px 0;
+  }
+  .partner__send-massege {
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .contact__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__title {
+    font-size: 17px;
+  }
+  .contact__item:last-child {
+    margin-top: 30px;
+  }
+  .menu__item {
+    width: 320px;
+    margin: 0 auto 15px;
+  }
+  .menu__title {
+    font-size: 11px;
+  }
+  .menu__title li {
+    display: none;
+    font-weight: normal;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .menu__title._active li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
